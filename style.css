@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(0, 0%, 12%);
+    width: 400px;
+    height: 650px;
+    border-radius: 20px;
+    padding: 60px;
+    color: hsl(0, 0%, 100%);
+}
+
+.introduction img {
+    margin: auto;
+    border-radius: 50%;
+    width: 50%;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    padding: 15px 0 10px 0;
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+    color: hsl(75, 94%, 57%);
+    font-family: 'Inter', sans-serif;
+}
+
+.description p {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.social-accounts {
+    /* background-color: blue; */
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.social-accounts li {
+    padding: 6px;
+
+}
+
+.social-accounts li button {
+    width: 100%;
+}
+
+.social-accounts button {
+    padding: 12px;
+    font-weight: 700;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    background-color: #727578;
+    font-weight: bold;
+}
+.social-accounts button:hover{
+    cursor: pointer;
+    background-color: hsl(75, 94%, 57%);
+}
+
+
+/* Mobile styles */
+@media (max-width: 375px) {
+    body {
+        font-size: 14px; /* Font size for paragraph */
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+    
+    body {
+        font-size: 16px; /* Increase font size for better readability */
+    }
+}
+
+
+/* Desktop styles */
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 1440px; /* Set maximum width for the container */
+        margin: 0 auto; /* Center the container */
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Display three columns in a grid */
+        gap: 20px; /* Add gap between grid items */
+    }
+}
